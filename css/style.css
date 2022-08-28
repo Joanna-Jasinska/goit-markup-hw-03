@@ -1,0 +1,120 @@
+/*  
+.ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+*/
+
+/* *
+.list-filter button:hover {
+  background-color: #2196f3;
+  color: white;
+}
+/* */
+:root {
+  --color-accented: #2196f3;
+  --color-normal: #757575;
+  --color-strong: #212121;
+  --color-background1: white;
+  --color-background2: #2f303a;
+  --color-background3: #f5f4fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-normal);
+  font-weight: 400;
+  font-size: 14px;
+}
+.company-name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+.button1 {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--color-background3);
+  color: var(--color-strong);
+  border-width: 0;
+}
+.link1 {
+  font-weight: 500;
+}
+
+.button1:hover {
+  background-color: var(--color-accented);
+  color: var(--color-background1);
+  cursor: pointer;
+  /*border-width: 0;*/
+}
+.button1:focus {
+  background-color: var(--color-accented);
+  color: var(--color-background1);
+  cursor: pointer;
+}
+
+.link1:hover {
+  color: var(--color-accented);
+}
+/* */
+.link1:focus {
+  color: var(--color-accented);
+}
+.product-card h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+.product-card {
+  font-size: 16px;
+}
+.hq-address {
+  color: var(--color-background1);
+}
+#contact {
+  height: 252px;
+  background-color: var(--color-background2);
+}
+.upper-article {
+  line-height: 171%;
+}
+.upper-article h2 {
+  color: var(--color-strong);
+  font-weight: 700;
+  font-size: 36px;
+}
+.upper-article h3 {
+  font-weight: 700;
+  color: var(--color-strong);
+}
+.lower-article h2 {
+  color: var(--color-strong);
+  font-weight: 700;
+  font-size: 36px;
+}
+.banner1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+  color: var(--color-background1);
+  background-color: var(--color-background2);
+}
+.banner1 button {
+  font-weight: 700;
+  font-size: 16px;
+  background-color: var(--color-accented);
+  color: var(--color-background1);
+}
+nav .link1 {
+  color: var(--color-strong);
+}
+.personel-card h4 {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-strong);
+}
+.personel-card {
+  font-size: 16px;
+}
+/* */
