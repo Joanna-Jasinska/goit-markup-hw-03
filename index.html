@@ -12,35 +12,42 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
   </head>
   <body>
-    <header>
-      <a href="https://joanna-jasinska.github.io/goit-markup-hw-02/">
+    <header class="container-lined">
+      <a
+        class="container-left"
+        href="https://joanna-jasinska.github.io/goit-markup-hw-03/"
+      >
         <h2 class="company-name">
           <span class="regular-color">Web</span
           ><span class="accented-color">Studio</span>
         </h2>
       </a>
 
-      <nav>
+      <nav class="container-spaced">
         <a class="link1" href="./index.html">Agencja</a>
         <a class="link1" href="./portfolio.html">Portfolio</a>
         <a class="link1" href="#contact">Kontakt</a>
       </nav>
 
-      <a class="link1" href="mailto:info@example.com">info@example.com</a>&nbsp;
+      <div class="container-right">
+        <a class="link1" href="mailto:info@example.com">info@example.com</a
+        >&nbsp;
 
-      <a class="link1" href="tel:+48111111111">+48 111 111 111</a>
+        <a class="link1" href="tel:+48111111111">+48 111 111 111</a>
+      </div>
     </header>
     <main>
-      <section class="banner1" id="agency">
-        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+      <section class="banner1 container-centered" id="agency">
+        <h1>EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</h1>
 
         <button type="button" value="Zamów usługę">Zamów usługę</button>
       </section>
 
       <section class="upper-article" id="portfolio">
-        <ul>
+        <ul class="container-lined">
           <li>
             <h3>LOREM IPSUM</h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -62,34 +69,36 @@
             arcusem. Sed non sodales dui. Interdum et malesuada
           </li>
         </ul>
-        <h2>Czym się zajmujemy</h2>
+        <section>
+          <h2 class="container-lined">Czym się zajmujemy</h2>
 
-        <ul>
-          <li>
-            <img
-              src="./images/img-code.jpg"
-              alt="Writing codes and algorhitms"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/img-app.jpg"
-              alt="Working on smartphone apps"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/img-tab.jpg"
-              alt="Working with color palette on a tablet"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
+          <ul class="container-lined">
+            <li>
+              <img
+                src="./images/img-code.jpg"
+                alt="Writing codes and algorhitms"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/img-app.jpg"
+                alt="Working on smartphone apps"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/img-tab.jpg"
+                alt="Working with color palette on a tablet"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </section>
       </section>
 
       <section class="lower-article">

@@ -1,12 +1,72 @@
-/*  
-.ul {
+/*!!  <- to be deleted*/
+
+.container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-shrink: calc(100% / 3);
 }
-*/
+section {
+  padding: 94px 0 94px 0;
+}
+
+.container-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: green; /*!!*/
+}
+
+.container-lined {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: deepskyblue; /*!!*/
+  width: 1200px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+/* 
+.container-lined > :first-child {
+  margin-left: 215px;
+}
+.container-lined > :last-child {
+  margin-right: 215px;
+} !!*/
+
+.container-spaced {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: orange;
+}
+.container-left {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: left;
+  background-color: red;
+}
+.container-right {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: right;
+  background-color: greenyellow;
+}
+/* .container-centered > :nth-child(n) {
+  display: flex;
+} */
+
+.flex-of-3 {
+  display: flex;
+}
 
 /* *
+
+flex-wrap: wrap;
+  flex-direction: row;
+  
 .list-filter button:hover {
   background-color: #2196f3;
   color: white;
@@ -26,6 +86,32 @@ body {
   color: var(--color-normal);
   font-weight: 400;
   font-size: 14px;
+
+  width: 1600px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ul {
+  list-style: none;
+}
+header {
+  height: 80px;
+}
+#contact {
+  /* footer */
+  height: 252px;
+  background-color: var(--color-background2);
 }
 .company-name {
   font-family: "Raleway", sans-serif;
@@ -43,12 +129,7 @@ body {
   font-weight: 500;
 }
 
-.button1:hover {
-  background-color: var(--color-accented);
-  color: var(--color-background1);
-  cursor: pointer;
-  /*border-width: 0;*/
-}
+.button1:hover,
 .button1:focus {
   background-color: var(--color-accented);
   color: var(--color-background1);
@@ -72,10 +153,6 @@ body {
 .hq-address {
   color: var(--color-background1);
 }
-#contact {
-  height: 252px;
-  background-color: var(--color-background2);
-}
 .upper-article {
   line-height: 171%;
 }
@@ -94,11 +171,17 @@ body {
   font-size: 36px;
 }
 .banner1 {
+  max-height: 25%;
+  min-height: 600px;
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 136%;
   color: var(--color-background1);
   background-color: var(--color-background2);
+}
+.banner1 h1 {
+  margin: 30px;
 }
 .banner1 button {
   font-weight: 700;
