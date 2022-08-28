@@ -43,10 +43,12 @@
       <section class="banner1 container-centered" id="agency">
         <h1>EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</h1>
 
-        <button type="button" value="Zamów usługę">Zamów usługę</button>
+        <button class="box-200x50" type="button" value="Zamów usługę">
+          Zamów usługę
+        </button>
       </section>
 
-      <section class="upper-article" id="portfolio">
+      <section class="upper-article section" id="portfolio">
         <ul class="container-lined">
           <li>
             <h3>LOREM IPSUM</h3>
@@ -70,7 +72,7 @@
           </li>
         </ul>
         <section>
-          <h2 class="container-lined">Czym się zajmujemy</h2>
+          <h2 class="container-centered">Czym się zajmujemy</h2>
 
           <ul class="container-lined">
             <li>
@@ -101,69 +103,80 @@
         </section>
       </section>
 
-      <section class="lower-article">
-        <h2>Nasz zespół</h2>
+      <section class="lower-article section">
+        <h2 class="container-centered">Nasz zespół</h2>
 
-        <ul>
-          <li class="personel-card">
+        <ul class="container-lined">
+          <li class="personel-card container-centered">
             <img
               src="./images/portrait1.jpg"
               alt="Portrait of John Doe, smiling man"
               width="270"
               height="260"
             />
-            <h4>John Doe</h4>
-            Product Designer
+            <section class="padding-30 center">
+              <h4>John Doe</h4>
+              Product Designer
+            </section>
           </li>
-          <li class="personel-card">
+          <li class="personel-card container-centered">
             <img
               src="./images/portrait2.jpg"
               alt="Portrait of John Doe, smiling woman"
               width="270"
               height="260"
             />
-            <h4>John Doe</h4>
-            Frontend Developer
+            <section class="padding-30 center">
+              <h4>John Doe</h4>
+              Frontend Developer
+            </section>
           </li>
-          <li class="personel-card">
+          <li class="personel-card container-centered">
             <img
               src="./images/portrait3.jpg"
               alt="Portrait of John Doe, smiling man"
               width="270"
               height="260"
             />
-            <h4>John Doe</h4>
-            Marketing
+            <section class="padding-30 center">
+              <h4>John Doe</h4>
+              Marketing
+            </section>
           </li>
-          <li class="personel-card">
+          <li class="personel-card container-centered">
             <img
               src="./images/portrait4.jpg"
               alt="Portrait of John Doe, smiling man"
               width="270"
               height="260"
             />
-            <h4>John Doe</h4>
-            UI Designer
+
+            <section class="padding-30 center">
+              <h4>John Doe</h4>
+              UI Designer
+            </section>
           </li>
         </ul>
       </section>
     </main>
     <footer id="contact">
-      <a href="https://joanna-jasinska.github.io/goit-markup-hw-01/">
-        <h2 class="company-name">
-          <span class="regular-color">Web</span
-          ><span class="accented-color">Studio</span>
-        </h2>
-      </a>
-      <address class="hq-address">
-        <strong> m. Warszawa, Aleje Jerozolimskie 21</strong>
-      </address>
-      <p>
-        <a href="mailto:info@example.com">info@example.com</a>
-      </p>
-      <p>
-        <a href="tel:+48111111111">+48 111 111 111</a>
-      </p>
+      <div class="container-left-wrap">
+        <a href="https://joanna-jasinska.github.io/goit-markup-hw-01/">
+          <h2 class="company-name">
+            <span class="regular-color">Web</span
+            ><span class="accented-color">Studio</span>
+          </h2>
+        </a>
+        <address class="hq-address">
+          <strong> m. Warszawa, Aleje Jerozolimskie 21</strong>
+        </address>
+        <p>
+          <a href="mailto:info@example.com">info@example.com</a>
+        </p>
+        <p>
+          <a href="tel:+48111111111">+48 111 111 111</a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
