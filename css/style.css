@@ -1,5 +1,3 @@
-/*!!  <- to be deleted*/
-
 :root {
   --color-accented: #2196f3;
   --color-normal: #757575;
@@ -7,6 +5,7 @@
   --color-background1: white;
   --color-background2: #2f303a;
   --color-background3: #f5f4fa;
+  --color-border1: #eeeeee;
 }
 .section {
   padding: 94px 0 94px 0;
@@ -17,29 +16,37 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: green; /*!!*/
 }
 .container-wrap {
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow; /*!!*/
+  justify-content: space-around;
+  gap: 30px;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 215px;
+}
 .container-lined {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: deepskyblue; /*!!*/
-  width: 1200px;
-  margin: 0 215px;
-  gap: 94;
+  gap: 94px;
 }
 
+.container-lined-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 215px;
+  gap: 8px;
+}
 .container-spaced {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: orange;
   gap: 46px;
 }
 .container-right {
@@ -48,13 +55,11 @@
   align-items: center;
   justify-content: right;
   gap: 50px;
-  background-color: greenyellow;
 }
 .container-left {
   display: flex;
   align-items: center;
   justify-content: left;
-  background-color: red;
 }
 .container-left-wrap {
   text-align: left;
@@ -86,6 +91,10 @@ h6 {
   vertical-align: baseline;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
   padding-inline-start: 0;
@@ -102,6 +111,7 @@ header {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
+  height: 31px;
 }
 .button1 {
   font-size: 16px;
@@ -112,6 +122,7 @@ header {
 }
 .link1 {
   font-weight: 500;
+  color: var(--color-strong);
 }
 
 .button1:hover,
@@ -128,12 +139,30 @@ header {
 .link1:focus {
   color: var(--color-accented);
 }
+
+.link2 {
+  font-weight: 500;
+  color: var(--color-strong) 60%;
+}
 .product-card h3 {
   font-weight: 700;
   font-size: 18px;
 }
 .product-card {
   font-size: 16px;
+  border-top: 0px;
+}
+.product-card-bottom {
+  border-top: 0px;
+  border-left: 1px solid var(--color-border1);
+  border-right: 1px solid var(--color-border1);
+  border-bottom: 1px solid var(--color-border1);
+  padding: 20px 24px;
+  line-height: 188%;
+}
+.product-card-bottom h3 {
+  margin-bottom: 4px;
+  line-height: 200%;
 }
 .hq-address {
   color: var(--color-background1);
@@ -158,7 +187,6 @@ header {
 }
 .section h2 {
   color: var(--color-strong);
-  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
 }
@@ -198,6 +226,9 @@ nav .link1 {
 .padding-30 > :nth-child(n) {
   margin: 10px;
 }
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
 .center {
   text-align: center;
 }
@@ -209,8 +240,6 @@ nav .link1 {
 footer > :nth-child(n) > :nth-child(n) {
   display: flex;
   padding-top: 9px;
-
-  background-color: yellowgreen;
   margin: 0;
 }
 footer > :nth-child(n) > :first-child {
@@ -218,14 +247,24 @@ footer > :nth-child(n) > :first-child {
   /* padding: 9px 0; */
   padding-top: 60px;
   padding-bottom: 20px;
-  background-color: yellowgreen;
   /* margin: 10px; */
 }
 footer > :nth-child(n) > :last-child {
   display: flex;
 
   padding-bottom: 60px;
-  background-color: yellowgreen;
   margin: 0;
 }
-/* */
+.list-filter .button1 {
+  padding: 6px 22px;
+}
+.accented-color {
+  color: var(--color-accented);
+}
+.strong-color {
+  color: var(--color-strong);
+}
+.strong-inverted-color {
+  color: var(--color-background1);
+}
+/* */ ;
